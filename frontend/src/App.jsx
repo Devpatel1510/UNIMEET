@@ -10,7 +10,7 @@ import EnterM from './components/EnterM';
 
 import Otp1 from './pages/otp1';
 import MeetingR from './pages/MeetingR';
-import HomePage from './pages/chat';
+import HomePage from './pages/Chat';
 import Account from './pages/Account';
 
 
