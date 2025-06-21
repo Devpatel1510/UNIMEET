@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ChatHeader from './ChatHeader'
-import Messageinput from './MessageInput'
+import MessageInput from './MessageInput'
 import { useChatStore } from '../store/chat.store'
 import { formatMessageTime } from "../lib/utils";
 import { useauthstore } from '../store/auth.store';
@@ -169,7 +169,7 @@ function ChatContainer() {
                 </button>
             )}
 
-            <Messageinput />
+            <MessageInput />
         </div>
     )
 }
