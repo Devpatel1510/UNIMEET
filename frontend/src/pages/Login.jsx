@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useauthstore } from '../store/auth.store';
 import { Link } from 'react-router-dom';
+import { Loader2 } from 'lucide-react';
 
 function Login() {
     const [formdata, setformdata] = useState({
@@ -44,11 +45,13 @@ function Login() {
                         >
                             {isLoginin ? (
                                 <>
+                                    <Loader2 />
 
                                     Loading...
+                                    
                                 </>
                             ) : (
-                                "Create Account"
+                                "Login"
                             )}
                         </button>
                         <Link
