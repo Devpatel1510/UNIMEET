@@ -82,7 +82,7 @@ function ChatContainer() {
                 <div className="flex-1 overflow-y-auto p-4">
                     
                 </div>
-                <Messageinput />
+                <MessageInput />
             </div>
         )
     }
