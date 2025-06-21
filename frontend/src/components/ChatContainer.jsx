@@ -75,17 +75,17 @@ function ChatContainer() {
         messageEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
-    if (isMessagesLoading) {
-        return (
-            <div className="flex-1 flex flex-col" >
-                <ChatHeader />
-                <div className="flex-1 overflow-y-auto p-4">
-                    
-                </div>
-                <MessageInput />
+   if (isMessagesLoading) {
+    return (
+        <div className="flex-1 flex flex-col">
+            <ChatHeader />
+            <div className="flex-1 flex items-center justify-center bg-white">
+                <Loader2 className="h-8 w-8 text-blue-500 animate-spin" />
             </div>
-        )
-    }
+            <Messageinput />
+        </div>
+    );
+}
 
     return (
         <div className="flex-1 flex flex-col md:flex relative  bg-blue-50" >
