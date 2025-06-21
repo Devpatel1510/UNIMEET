@@ -4,7 +4,7 @@ import MessageInput from './MessageInput'
 import { useChatStore } from '../store/chat.store'
 import { formatMessageTime } from "../lib/utils";
 import { useauthstore } from '../store/auth.store';
-
+import { Loader2 } from 'lucide-react';
 
 import toast from 'react-hot-toast';
 
