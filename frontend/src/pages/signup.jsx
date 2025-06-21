@@ -23,7 +23,7 @@ function Signup() {
 
   const sendOtpToEmail = async () => {
   try {
-    const res = await axios.post("http://localhost:5001/api/send-otp", {
+    const res = await axios.post("/api/send-otp", {
       email: formdata.email,
     });
     toast.success(res.data.message || "OTP sent to your email.");
