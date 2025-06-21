@@ -9,11 +9,14 @@ import messageRoute from "./Routes/message.route.js"
 import { app, server } from "./lib/socket.js";
 import { initSocketServer } from "./lib/socket.js";
 import accountRoutes from "./Routes/account.js";
+import path from "path";
 initSocketServer();
 dotenv.config(); 
 
 
 const PORT = process.env.PORT || 5001;
+
+const __dirname = path.resolve();
 
 app.use(cors({
   origin: "http://localhost:5173",
