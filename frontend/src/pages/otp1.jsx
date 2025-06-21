@@ -56,7 +56,7 @@ const formdata = { email, password };
     if (otp.length !== 4) return toast.error("Enter complete 4-digit OTP");
 
     try {
-      const res = await axios.post("http://localhost:5001/api/verify-otp", {
+      const res = await axios.post("/api/verify-otp", {
         email,
         otp,
       });
