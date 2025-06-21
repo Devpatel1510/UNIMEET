@@ -15,7 +15,7 @@ import {
 
 
 
-const socket = io('http://localhost:5001');
+const socket = io();
 
 const MeetingR = () => {
     const { roomId } = useParams();
