@@ -58,7 +58,7 @@ function Login() {
                             to="/signup"
                             className="text-sm hover:text-gray-300 transition"
                         >
-                            Create an account ?
+                            Login
                         </Link>
                     </form>
                     <hr className="border-black border-t-2 w-64 mt-10 mb-6" />
