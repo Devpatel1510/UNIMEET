@@ -82,7 +82,7 @@ function ChatContainer() {
             <div className="flex-1 flex items-center justify-center bg-white">
                 <Loader2 className="h-8 w-8 text-blue-500 animate-spin" />
             </div>
-            <Messageinput />
+            <MessageInput />
         </div>
     );
 }
